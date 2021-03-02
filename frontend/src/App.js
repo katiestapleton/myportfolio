@@ -1,6 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './components/navbar/NavBar.js'
+import logo from './logo.svg';
 
+function App() {
+  return (
+    <div className="App">
+      <NavBar />
+    </div>
+  )
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +32,5 @@ function App() {
     </div>
   );
 }
-
+*/
 export default App;
