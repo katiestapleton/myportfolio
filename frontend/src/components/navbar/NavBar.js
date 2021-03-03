@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {MenuItems} from "./menuItems"
 import {Button} from '../button'
 import './navBar.css'
-import logo from '../../../public/logo.svg';
-import menu from '../../../public/menu.svg';
-import closeout from '../../../public/closeicon.svg';
 
 //TO DO: need to import images and update image codes (logo, fab fas) within nav bar
 //TO DO: link logo to home page
