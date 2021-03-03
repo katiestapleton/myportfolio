@@ -14,9 +14,11 @@
   cursor: pointer;
 }
 
-fa-react {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
+#logoKS {
+  padding: 10px;
+  margin: 2px;
+  height: 4rem;
+  width: 4rem;
 }
 
 .navMenu {
@@ -54,11 +56,18 @@ fa-react {
     display: none;
 }
 
+
 @media screen and (max-width: 960px) {
   .navBarItems {
     position: relative;
   }
+  
 
+  #logoKS {
+    padding: 2px;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
   .navMenu {
     display: flex;
     flex-direction: column;
