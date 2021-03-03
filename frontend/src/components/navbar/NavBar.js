@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import {MenuItems} from "./menuItems"
-import {Button} from '../button'
-import './navBar.css'
+import {MenuItems} from "./menuItems";
+import {Button} from '../button';
+import {CloseIcon} from '../images/closeicon.js';
+import {MenuIcon} from '../images/menu.js';
+import {LogoKS} from '../images/logoKS.js';
+import './navBar.css';
 
 //TO DO: need to import images and update image codes (logo, fab fas) within nav bar
 //TO DO: link logo to home page
 
+
 class NavBar extends Component {
   state = { clicked: false }
 
+  
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
@@ -16,7 +21,8 @@ class NavBar extends Component {
   render() {
     return(
       <nav className='navBarItems'>
-        <h1 className='navBarLogo'>Katie Stapleton<i className="fab fa-react"></i></h1>
+
+        <h1 className='navBarLogo'>Katie Stapleton</h1>
         <div className='menuIcon' onClick={this.handleClick}>
           <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
