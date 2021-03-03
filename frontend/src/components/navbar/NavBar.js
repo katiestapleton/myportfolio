@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import {MenuItems} from "./menuItems";
 import {Button} from '../button';
-import img1 from '../../images-std/logoKSimg.png'
+import LogoPrim from '../../images-std/logoKSimg.png'
+import MenuIcon from '../../images-std/menuHamb.png'
+import CloseIcon from '../../images-std/closeIcon.png'
 import './navBar.css';
 
 //TO DO: need to import images and update image codes (logo, fab fas) within nav bar
 //TO DO: link logo to home page
-/* SVG TO JS FILES. ISSUE WITH IMPORTING
-import {CloseIcon} from '../images-svg-js/closeicon.js';
-import {MenuIcon} from '../images-svg-js/menu.js';
-import {LogoKS} from '../images-svg-js/logoKS.js';
-*/
-
 
 class NavBar extends Component {
   state = { clicked: false }
@@ -27,10 +23,10 @@ class NavBar extends Component {
         
         <h1 className='navBarLogo'>Katie Stapleton</h1>
         {/*FIX: switch to text/alt logo for smaller screens*/}
-        <img id='logoKS' src={img1} alt="Katie's logo" />
+        <img id='logoKS' src={LogoPrim} alt="Katie's logo" />
         
         <div className='menuIcon' onClick={this.handleClick}>
-          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+          <i className={this.state.clicked ? {CloseIcon} : {MenuIcon}}></i>
         </div>
 
         {/* map menu items into nav bar*/}
